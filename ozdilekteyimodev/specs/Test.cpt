@@ -1,0 +1,48 @@
+Created by testinium on 29.10.2021
+
+This is a concept file with following syntax for each concept.
+# Alışverişe Başla Butonuna Tıklanır
+* "2" saniye bekle
+* Açılış Sayfası Kontrolü
+* "com.ozdilek.ozdilekteyim:id/tv_startShoppingStore" İd'li elemente tıkla
+* "1" saniye bekle
+* Alışveriş Sayfası Doğrulama
+* "com.ozdilek.ozdilekteyim:id/nav_categories" İd'li elemente tıkla
+* "1" saniye bekle
+* Kategori Sayfası Kontrolü
+
+# Kadın kategorisinde pantolon sayfasına git
+* "//android.widget.RelativeLayout[@index=1]" xpath'li elemente tıkla
+* "1" saniye bekle
+* "//android.widget.TextView[@text='Pantolon']" xpath'li elemente tıkla
+* "1" saniye bekle
+
+# İki defa scroll edilir ve rastgele bir ürün seçilir
+* sayfa boyunca scroll et
+* "1" saniye bekle
+* sayfa boyunca scroll et
+* "1" saniye bekle
+* "//android.widget.ImageView[@resource-id='com.ozdilek.ozdilekteyim:id/imageView']" xpath'te bulunan sayfada görünen tüm ürünleri bul ve rastgele bir ürüne tıkla
+* "1" saniye bekle
+* Product sayfası görüntüleme
+* "com.ozdilek.ozdilekteyim:id/imgFav" İd'li elemente tıkla
+
+# Login olunur
+* Login sayfası
+* "1" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/etEposta" İd'li elemente "nilsu.koc@testinium.com" değerini yaz
+* "1" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/etPassword" İd'li elemente "123456" değerini yaz
+* "1" saniye bekle
+
+# İki defa geri gitme işlemi yapılır
+* "com.ozdilek.ozdilekteyim:id/ivBack" İd'li elemente tıkla
+* "1" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/ivBack" İd'li elemente tıkla
+* "1" saniye bekle
+
+# Rastgele bir ürün seçilir ve sepete eklenir
+* "//android.widget.ImageView[@resource-id='com.ozdilek.ozdilekteyim:id/imageView']" xpath'te bulunan sayfada görünen tüm ürünleri bul ve rastgele bir ürüne tıkla
+* "1" saniye bekle
+* Sepete ekle
+* "3" saniye bekle
